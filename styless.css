@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /*Colores variables*/
+  --tierra: #61210e;
+  --agua: #1d736a;
+  --fuego: #ba674b;
+  --arena: #e7ae9b;
+  --hueso: whitesmoke;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor_principal {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--arena);
+}
+
+.tarjeta_registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 32vw;
+  height: fit-content;
+  border: none;
+}
+
+.tarjeta_registro h2 {
+  font-size: clamp(22px, 9vh, 26px);
+  font-weight: bold;
+  color: var(--tierra);
+  margin-bottom: 1rem;
+}
+
+.tarjeta_registro p {
+  min-width: 280px;
+  font-size: clamp(14px, 6vh, 16px);
+  color: var(--fuego);
+  margin-bottom: 1rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  align-items: flex-start;
+  min-width: 280px;
+  font-size: clamp(14px, 6vh, 16px);
+  color: var(--tierra);
+}
+
+/*Botones*/
+
+.contendor_btn {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 300px;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.botones {
+  border: none;
+  border-radius: 0.2rem;
+  box-shadow: 0px 5px 10px 0 #503c2c;
+  height: 5vh;
+  width: 7vw;
+  min-width: 120px;
+  font-weight: bold;
+  font-size: clamp(10px, 5vh, 15px);
+  cursor: pointer;
+}
+
+/*Botón registro*/
+.registro_btn {
+  color: var(--hueso);
+  background-color: var(--tierra);
+}
+
+.registro_btn:hover {
+  color: var(--hueso);
+  background-color: var(--fuego);
+  transition: all 0.7s ease;
+}
+
+/*botón cuenta*/
+.cuenta_btn {
+  color: var(--hueso);
+  background-color: var(--agua);
+}
+
+.cuenta_btn:hover {
+  color: var(--hueso);
+  background-color: var(--fuego);
+  transition: all 0.7s ease;
+}
+
+.campos {
+  height: 4vh;
+  width: 15vw;
+  min-width: 280px;
+  border: none;
+  outline: none;
+  border-radius: 1px;
+  font-size: clamp(8px, 4.5vh, 12px);
+}
+
+.sesion {
+  font-size: clamp(10px, 5vh, 15px);
+  margin-right: 1rem;
+  color: var(--fuego);
+}
+
+input {
+  padding-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+.img {
+  height: 45vh;
+  width: 25vw;
+  min-width: 150px;
+  max-width: 500px;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+
+.registro_picture {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 720px) {
+  .img {
+    display: none;
+  }
+}

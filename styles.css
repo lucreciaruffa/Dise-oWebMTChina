@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /*Colores variables*/
+  --tierra: #61210e;
+  --agua: #1d736a;
+  --fuego: #ba674b;
+  --arena: #e7ae9b;
+  --hueso: whitesmoke;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor_principal {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--arena);
+}
+
+.tarjeta_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 20vw;
+  height: fit-content;
+  border: none;
+  gap: 1rem;
+}
+
+.tarjeta_login h2 {
+  font-size: clamp(22px, 9vh, 26px);
+  font-weight: bold;
+  color: var(--tierra);
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta_login p {
+  min-width: 200px;
+  font-size: clamp(14px, 6vh, 16px);
+  color: var(--fuego);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  align-items: flex-start;
+  color: var(--tierra);
+  font-size: clamp(14px, 6vh, 16px);
+}
+
+.login_btn {
+  height: 5vh;
+  width: 15vw;
+  min-width: 150px;
+  font-weight: bold;
+  font-size: clamp(10px, 5vh, 15px);
+  color: var(--hueso);
+  background-color: var(--tierra);
+  box-shadow: 0px 5px 10px 0 #503c2c;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.login_btn:hover {
+   color: var(--hueso);
+  background-color: var(--agua);
+  transition: all 0.7s ease;
+}
+
+.campos {
+  height: 4vh;
+  width: 15vw;
+  min-width: 150px;
+  border: none;
+  outline: none;
+  border-radius: 1px;
+  font-size: clamp(8px, 4.5vh, 12px);
+}
+
+.sesion {
+  color: var(--tierra);
+  font-size: clamp(10px, 5vh, 15px);
+  margin-right: 1rem;
+}
+
+input {
+  padding-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+.img {
+  height: 45vh;
+  width: 25vw;
+  min-width: 150px;
+  max-width: 500px;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+
+.login_picture {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 720px) {
+  .img {
+    display: none;
+  }
+}

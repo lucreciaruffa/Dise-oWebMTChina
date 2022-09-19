@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" conten="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cfd74a4017.js" crossorigin="anonymous"></script>
+    <link rel="StyleSheet" href="style.css" type="text/css" media="screen" />
+    <title>MTCh</title>
+</head>
+
+<body>
+    <header>
+        <nav class="Navbar">
+            <div>
+                <h1>MTChina</h1>
+            </div>
+            <label for="menu-toggle">
+                <div class="menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <ul class="toggle">
+                <li><a href="#section__hero" class="ali">Inicio</a></li>
+                <li><a href="#section__historia" class="ali">Medicina Tradicional China</a></li>
+                <li><a href="#section__terapias" class="ali">Terapias</a></li>
+                <li><a href="#contact__form" class="ali">Reserva tu turno</a></li>
+                <li><a href="#ubicacion" class="ali">Dónde nos encontramos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--hero-->
+    <main class="main__container">
+        <section class="section__hero" id="section__hero">
+            <div class="hero_card">
+                <h1>MTCh</h1>
+                <h2>Medicina Tradicional</h2>
+                <p> “El Universo, ya es una unidad armoniosa; toma simplemente conciencia de ello.”
+                    <span>- Lao Tsé -</span>
+                </p>
+                <div class="contenedor_botones">
+                    <a href="login.html"><button class="botones cuenta_btn">Ingresar</button></a>
+                    <a href="registro.html"><button class="botones registro_btn">Registrarme</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!--historia-->
+        <section class="section__historia default_sec" id="section__historia">
+            <h2> Historia de la Medicina Tradicional China</h2>
+            <span class="divider"></span>
+            <p>La medicina tradicional china (MTC), originada hace más de 2.000 años, se basa en la filosofía de que la
+                enfermedad es consecuencia del flujo inadecuado de la fuerza vital (qi). Se restablece la circulación de
+                qi mediante el equilibrio de las fuerzas opuestas del yin y el yang, que se manifiestan en el cuerpo
+                como frío y calor, interno y externo, y deficiencia y exceso.</p>
+            <p> Se utilizan diversas prácticas para preservar y restaurar el qi y por lo tanto la salud. Los más
+                comúnmente utilizados son: Hierbas medicinales, acupuntura, masaje tui na, moxibustion. Otras prácticas
+                incluyen dieta y qi gong.</p>
+            <p> Actualmente, aún estando influenciada por la medicina occidental y sus grandes avances
+                técnicos (y por las sucesivas filosofías a lo largo de la historia, como los diferentes comunismos de
+                los últimos tiempos), continúa plenamente vigente en cada vez más países del mundo, con China como
+                principal exponente.</p>
+            <p>La medicina tradicional china considera al cuerpo como un todo, y atribuye la enfermedad al desequilibrio entre los diferentes elementos del mismo, por lo que su tratamiento, más que destinado a la curación de un síntoma concreto, se enfoca al restablecimiento del equilibrio corporal, enfatizando la necesidad de llevar una vida sana, la nutrición, la relajación, los ejercicios respiratorios y además otros métodos.</p>
+        </section>
+
+        <!--disciplinas-->
+        <section class="section__terapias default_sec" id="section__terapias">
+            <h2>Nuestras Terapias</h2>
+            <span class="divider"></span>
+            <p>En una sesión se trabajará de acuerdo a lo que necesite cada paciente con diferentes
+                disciplinas que integran la MTCH.</p>
+            <div class="card-container">
+                <div class="card">
+                    <div class="div_img">
+                        <img class="img__disciplina" src="tui na.jpg" alt="tui na">
+                    </div>
+                    <h2>Tui na</h2>
+                    <p>Es una técnica de masaje tradicional que al igual que la Acupuntura o el Qi Gong, tiene como objetivo la prevención y el tratamiento de enfermedades tanto agudas como crónicas.</p>
+                </div>
+                <div class="card">
+                    <div class="div_img">
+                        <img class="img__disciplina" src="acupuntura.jpg" alt="acupuntura">
+                    </div>
+                    <h2>Acupuntura</h2>
+                    <p> Consiste básicamente en la estimulación, con unas finas agujas metálicas, sobre diversos puntos que se ubican en los canales por los que circula la energía del cuerpo. </p>
+                </div>
+                <div class="card">
+                    <div class="div_img">
+                        <img class="img__disciplina" src="moxibustion.jpg" alt="moxibustion">
+                    </div>
+                    <h2>Moxibustion</h2>
+                    <p>Tratamiento terapéutico basado en la aplicación de calor como método para estimular diferentes partes del cuerpo con el fin de curar enfermedades o dolencias.</p>
+                </div>
+                <div class="card">
+                    <div class="div_img">
+                        <img class="img__disciplina" src="ventosas.jpg" alt="Ventosas">
+                    </div>
+                    <h2>Ventosas</h2>
+                    <p>Elemento redondo de vidrio que se coloca sobre la piel, creando un vacío en su interior, provocando que la piel se absorba dentro de la misma.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--formulario-->
+        <section class="contact__form default_sec" id="contact__form">
+            <div class="contenedor_principal">
+                <div class="img_contact_container">
+                  <img class="img_contacto" src="meridianos.jpg">
+                </div>
+                <div class="color_container">
+                  <h2>Contacto</h2>
+              <p>¿Te gustaría reservar un turno?</p>
+              <p>Completa el siguiente formulario, nos pondremos en contacto a la brevedad.</p>
+                  <label for="" >Nombre</label>
+                  <input type="text" placeholder="Ingresa tu nombre aquí">
+                  <label for="">E-mail</label>
+                  <input type="email" placeholder="Ingresa tu e-mail aquí">
+                  <label for="">Mensaje</label>
+                  <textarea name="" id="" cols="25" rows="10"></textarea>
+                  <button class="but">Solicitar turno</button>
+                </div>
+              </div>
+            </section>
+
+        <!--ubicación-->
+        <section class="ubicacion default_sec" id="ubicacion">
+            <h2>Consultorio</h2>
+            <span class="divider"></span>
+            <div class="map-responsive">
+                <div class="card_informacion">
+                    <div>
+                        <h3>Dirección</h3>
+                        <p>Avenida 9 de Julio s/n, C1043, CABA</p>
+                    </div>
+                    <div>
+                        <h3>Horarios de atención</h3>
+                        <p>Lunes a Viernes de 14.00–20.00 Hs.</p>
+                    </div>
+                    <div>
+                        <h3>Correo</h3>
+                        <p>mtch-loremipsum@gmail.com</p>
+                    </div>
+                </div>
+                <div class="mapa_container">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9288.678464449504!2d-58.3870444419265!3d-34.603054808038735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1655433230417!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <a href="#" target="" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+        </section>
+
+        <!--footer-->
+        <footer>
+            <div><button class="btn-footer"><a href="#" class="contact"><i class="fa-brands fa-instagram"></i></a></button>
+                <button class="btn-footer"><a href="#" class="contact"><i class="fa-solid fa-envelope"></i></a></button>
+                <button class="btn-footer"><a href="#" class="contact"><i class="fa-solid fa-mobile-screen-button"></i></button>
+            </div>
+            <p>Copyright © MTCH 2022</p>
+        </footer>
+    </main>
+</body>
+</body>
+
+</html>
